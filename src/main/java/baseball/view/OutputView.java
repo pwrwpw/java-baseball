@@ -1,12 +1,12 @@
 package baseball.view;
 
-import static baseball.model.Constant.MESSAGE_BALL;
-import static baseball.model.Constant.MESSAGE_GAME_END;
-import static baseball.model.Constant.MESSAGE_GAME_RESTART;
-import static baseball.model.Constant.MESSAGE_GAME_START;
-import static baseball.model.Constant.MESSAGE_INPUT_NUMBER;
-import static baseball.model.Constant.MESSAGE_NOTHING;
-import static baseball.model.Constant.MESSAGE_STRIKE;
+import static baseball.constant.OutputMessage.MESSAGE_BALL;
+import static baseball.constant.OutputMessage.MESSAGE_GAME_END;
+import static baseball.constant.OutputMessage.MESSAGE_GAME_RESTART;
+import static baseball.constant.OutputMessage.MESSAGE_GAME_START;
+import static baseball.constant.OutputMessage.MESSAGE_INPUT_NUMBER;
+import static baseball.constant.OutputMessage.MESSAGE_NOTHING;
+import static baseball.constant.OutputMessage.MESSAGE_STRIKE;
 
 import java.text.MessageFormat;
 
