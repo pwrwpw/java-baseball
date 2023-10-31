@@ -37,14 +37,14 @@ public class GameController {
 		}
 		outputView.printGameEnd();
 	}
-	public void progressGame() {
+	private void progressGame() {
 		gameData.setInputString(inputView.readNumber());
 		List<Integer> validateResult =
 			InputValidation.validateAndConvertInputToIntegerList(gameData.getInputString());
 		gameData.setPlayerNumbers(validateResult);
 		outputView.printResult(gameData.getStrikeCount(), gameData.getBallCount());
 	}
-	public boolean compareNumber() {
+	private boolean compareNumber() {
 		gameData.initCount();
 		List<Integer> playerNumbers = gameData.getPlayerNumbers();
 		List<Integer> computerNumbers = gameData.getComputerNumbers();
@@ -59,7 +59,7 @@ public class GameController {
 		}
 		return gameData.getStrikeCount() != 3;
 	}
-	public boolean isRestartRequested() {
+	private boolean isRestartRequested() {
 		String restartInput = inputView.readRestart();
 		String validatedRestartInput = InputValidation.validateRestartInput(restartInput);
 		return validatedRestartInput.equals("1");
