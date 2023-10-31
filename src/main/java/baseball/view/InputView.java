@@ -9,11 +9,9 @@ import java.util.stream.Collectors;
 public class InputView {
 
 	public String readNumber() {
-		OutputView.printInputNumber();
 		return Console.readLine();
 	}
 	public String readRestart() {
-		OutputView.printRestart();
 		return Console.readLine();
 	}
 

@@ -15,13 +15,13 @@ public class OutputView {
 	public void printGameStart() {
 		System.out.println(MESSAGE_GAME_START.getMessage());
 	}
-	public static void printRestart() {
+	public void printRestart() {
 		System.out.println(MESSAGE_GAME_RESTART.getMessage());
 	}
 	public void printGameEnd() {
 		System.out.println(MESSAGE_GAME_END.getMessage());
 	}
-	public static void printInputNumber() {
+	public void printInputNumber() {
 		System.out.print(MESSAGE_INPUT_NUMBER.getMessage());
 	}
 	public void printResult(int strike, int ball) {
