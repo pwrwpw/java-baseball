@@ -38,6 +38,7 @@ public class GameController {
 		outputView.printGameEnd();
 	}
 	private void progressGame() {
+		outputView.printInputNumber();
 		gameData.setInputString(inputView.readNumber());
 		List<Integer> validateResult =
 			InputValidation.validateAndConvertInputToIntegerList(gameData.getInputString());
@@ -60,6 +61,7 @@ public class GameController {
 		return gameData.getStrikeCount() != 3;
 	}
 	private boolean isRestartRequested() {
+		outputView.printRestart();
 		String restartInput = inputView.readRestart();
 		String validatedRestartInput = InputValidation.validateRestartInput(restartInput);
 		return validatedRestartInput.equals("1");
